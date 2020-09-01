@@ -1,20 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header>
+    <q-header class="bg-gra-02">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
         <q-toolbar-title>
-          Todo List
+          <router-link class="router-text" to="/">
+            <div class="logo">🩸Plasmatch</div>
+          </router-link>
         </q-toolbar-title>
         <!-- <q-btn class="q-mr-sm" v-if="isLoggedIn" outline rounded label="LogOut" @click="logout"/> -->
-        <div class="q-pa-md" v-if="isLoggedIn">
+        <!-- <div class="q-pa-md" v-if="isLoggedIn">
           <q-btn-dropdown
             color="primary"
             label="Account Settings"
@@ -64,7 +58,7 @@
 
               <q-separator vertical inset class="q-mx-lg" />
 
-              <!-- <div class="column items-center">
+               <div class="column items-center">
                 <div class="text-subtitle1 q-mt-md q-mb-xs">
                    <input
                     type="text"
@@ -82,103 +76,45 @@
                   v-close-popup
                   @click="logout"
                 />
-              </div> -->
+              </div>
             </div>
           </q-btn-dropdown>
+        </div> -->
+        <div v-if="isOnLandingPage">
+          <router-link class="router-text" to="/DonorRegistration">
+            <q-btn
+              class="q-mr-sm"
+              outline
+              rounded
+              label="Sign in Donor"
+              icon="keyboard_arrow_down"
+            />
+          </router-link>
+          <router-link class="router-text" to="/PatientRegistration">
+            <q-btn
+              class="q-mr-sm"
+              outline
+              rounded
+              label="Sign Up Patient"
+              icon="keyboard_arrow_down"
+            />
+          </router-link>
         </div>
-
-        <q-btn
-          class="q-mr-sm"
-          outline
-          rounded
-          label="Sign Up Patient"
-          icon="keyboard_arrow_down"
-          @click="signUpPatientOpen = !signUpPatientOpen, signUpDonorOpen = false"
-        /><q-btn
-          class="q-mr-sm"
-          outline
-          rounded
-          label="Sign in Donor"
-          icon="keyboard_arrow_down"
-          @click="signUpDonorOpen = !signUpDonorOpen, signUpPatientOpen = false"
-        />
-
-        <!-- <q-btn class="q-mr-sm" outline rounded label="sign up" icon='keyboard_arrow_down' @click='signUpOpen = !signUpOpen, signInOpen = false'/> -->
-        <transition name="slide">
-          <div
-            class="q-mr-sm sign-up-panel sign-up-panel-content"
-            v-if="signUpPatientOpen"
-          >
-            <div class="text-h4">
-              Sign In Form
-            </div>
-            <q-input filled label="Email" v-model="email" />
-            <q-input
-              class="q-mt-xs"
-              filled
-              type="password"
-              label="password"
-              v-model="password"
-            />
-            <q-btn color="primary" label="Sign up Patient!" @click="signIn" />
-          </div>
-        </transition>
-        <transition name="slide">
-          <div
-            class="q-mr-sm sign-up-panel sign-up-panel-content"
-            v-if="signUpDonorOpen"
-          >
-            <div class="text-h4">
-              Sign In Form
-            </div>
-            <q-input filled label="Email" v-model="email" />
-            <q-input
-              class="q-mt-xs"
-              filled
-              type="password"
-              label="password"
-              v-model="password"
-            />
-            <q-btn color="primary" label="Sign up Donor!" @click="signIn" />
-          </div>
-        </transition>
-        <!-- <transition  name='slide'>
-           <div class='q-mr-sm sign-up-panel sign-up-panel-content' v-if='signUpOpen'>
-             <div class='text-h4'>
-               Sign Up Form
-             </div>
-               <q-input filled  label="Email" />
-               <q-input class='q-mt-xs' filled  label="name" />
-               <q-input class='q-mt-xs' filled  label="password" />
-           </div>
-           </transition> -->
       </q-toolbar>
     </q-header>
 
-    <!-- <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
+    <q-page-container
+      id="page-container"
+      class="bg-gra-02"
+      style="height:100%; min-height:100vh"
     >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer> -->
-    <q-page-container id="page-container">
-      <div :class="{ 'section-blur': settingsOpen || signUpDonorOpen || signUpPatientOpen }">
+      <div
+        :class="{
+          'section-blur': settingsOpen
+        }"
+      >
         <transition name="router-anim">
-        <router-view />
+          <router-view />
         </transition>
       </div>
     </q-page-container>
@@ -186,17 +122,15 @@
 </template>
 
 <script>
+import router from "src/router";
 export default {
   name: "MainLayout",
   data() {
     return {
-      leftDrawerOpen: false,
       settingsOpen: false,
-      signInOpen: false,
-      signUpDonorOpen: false,
-      signUpPatientOpen: false,
-      isLoggedIn: false,
-      editingMode: false,
+
+      leftDrawerOpen: false,
+      isOnLandingPage: true,
 
       email: "",
       password: "",
@@ -205,11 +139,37 @@ export default {
       userName: "",
       userEmail: ""
     };
+  },
+  updated() {
+    console.log(this.$router.currentRoute.name)
+    if (this.$router.currentRoute.name === "home")
+      this.isOnLandingPage = true
+    else
+      this.isOnLandingPage = false
+  },
+  mounted() {
+    console.log(this.$router.currentRoute.name)
+
+    if (this.$router.currentRoute.name=== "home")
+      this.isOnLandingPage = true
+    else
+      this.isOnLandingPage = false
+  },
+  methods: {
+    patientSignUp() {
+      this.$router.push("PatientRegistration");
+    },
+    donorSignUp() {
+      this.$router.push("DonorRegistration");
+    }
   }
 };
 </script>
 
 <style>
+.bg-gra-02 {
+  background: -webkit-linear-gradient(left, #e0eff5 0%, #add8e6 100%);
+}
 .router-anim-enter-active {
   transition: all 0.3s ease-in-out;
 }
@@ -221,6 +181,23 @@ export default {
   /* transform: translateX(100px); */
   transform: scale(1.1);
   opacity: 0;
+}
+.logo {
+  font-family: "Lobster";
+  color: red;
+  font-size: 50px;
+  transition: 0.1s;
+}
+.logo:hover {
+  font-size: 55px;
+  transition: all 0.1s ease-out;
+}
+.router-text {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.1s;
+  cursor: pointer;
 }
 .disabledComponent {
   pointer-events: none;

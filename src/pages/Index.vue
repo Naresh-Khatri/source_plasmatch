@@ -1,213 +1,307 @@
 <template>
   <q-page class="">
-   <div class="hello">
-  <body
-    class="leading-normal tracking-normal text-white gradient"
-    style="font-family: 'Source Sans Pro', sans-serif;"
-  >
-    <!--Nav-->
-    <!--  -->
-
-    <!--Hero-->
-    <div class="pt-24">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
-        <div
-          class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
-        >
-          <p class="uppercase tracking-loose w-full">Do you want to be a HERO?</p>
-          <h1
-            class="my-4 text-5xl font-bold leading-tight"
-          >Matching eligible plasma donors with patients</h1>
-          <p
-            class="leading-normal text-2xl mb-8"
-          >Join this initiative today and make a difference!</p>
-        </div>
-        <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center">
-          <img
-            class="w-full md:w-4/5 z-50"
-            style="padding-left:300px; height:auto; width:400px;"
-            src="../assets/doctor-img.png"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="relative -mt-12 lg:-mt-24">
-      <svg
-        viewBox="0 0 1428 174"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+    <div class="hello">
+      <body
+        class="leading-normal tracking-normal text-white gradient"
+        style="font-family: 'Source Sans Pro', sans-serif;"
       >
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path
-              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-              opacity="0.100000001"
-            />
-            <path
-              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-              opacity="0.100000001"
-            />
-            <path
-              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-              id="Path-4"
-              opacity="0.200000003"
-            />
-          </g>
-          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path
-              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
+        <!--Nav-->
+        <!--  -->
 
-    <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
-        <h1
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-        >Our mission</h1>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <!-- <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem ipsum dolor sit amet</h3> -->
-            <p class="text-gray-600 mb-16" style="font-size:20px;">
-              We know how terrifying it is to run from pillar to post to find the right blood donor, in the absence of an obvious place or institution to reach out to. PlasmaLine has been created to make sure this crucial time isn’t wasted in looking in the wrong place.
-              <br />
-              <br />
-            </p>
-            <!-- Images from: <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a></p> -->
-          </div>
-          <div class="w-full sm:w-1/2 p-6">
-            <img
-              class="w-full md:w-4/5 z-50"
-              style="padding-left:100px; height:300px; width:auto;"
-              src="../assets/doctor-img.png"
-            />
-          </div>
-        </div>
-
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img
-              class="w-full md:w-4/5 z-50"
-              style="padding-left:150px; height:300px; width:auto;"
-              src="../assets/doctor-img.png"
-            />
-          </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <!-- <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem ipsum dolor sit amet</h3> -->
-              <p class="text-gray-600 mb-8" style="font-size:20px;">
-                Our aim is to match COVID recovered individuals with patients who are in need of plasma therapy. PlasmaLine is a small step towards solving the problem of finding eligible donors in a situation where time is of great essence.
-                <br />
-                <br />
+        <!--Hero-->
+        <div class="pt-24">
+          <div
+            class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+          >
+            <!--Left Col-->
+            <div
+              class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
+            >
+              <p class="uppercase tracking-loose w-full">
+                Do you want to be a HERO?
               </p>
-              <!-- Images from: <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a></p> -->
+              <h1 class="my-4 text-5xl font-bold leading-tight">
+                Matching eligible plasma donors with patients
+              </h1>
+              <p class="leading-normal text-2xl mb-8">
+                Join this initiative today and make a difference!
+              </p>
+            </div>
+            <!--Right Col-->
+            <div class="w-full md:w-3/5 py-6 text-center">
+              <img
+                class="w-full md:w-4/5 z-50"
+                style="padding-left:300px; height:auto; width:400px;"
+                src="../assets/doctor-img.png"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h1
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-        >How it works?</h1>
-        <div class="w-full mb-4"></div>
+        <div class="relative -mt-12 lg:-mt-24">
+          <svg
+            viewBox="0 0 1428 174"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g
+                transform="translate(-2.000000, 44.000000)"
+                fill="#FFFFFF"
+                fill-rule="nonzero"
+              >
+                <path
+                  d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                  opacity="0.100000001"
+                />
+                <path
+                  d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                  opacity="0.100000001"
+                />
+                <path
+                  d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                  id="Path-4"
+                  opacity="0.200000003"
+                />
+              </g>
+              <g
+                transform="translate(-4.000000, 76.000000)"
+                fill="#FFFFFF"
+                fill-rule="nonzero"
+              >
+                <path
+                  d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
 
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <!-- <p class="w-full text-gray-600 text-xs md:text-sm px-6">xGETTING STARTED</p> -->
-            <div class="w-full font-bold text-3xl text-gray-800 py-6">For Donors</div>
-            <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 1: Register</div>
-            <p
-              class="text-gray-800 text-base px-6 mb-5"
-            >Register with us by filling out a simple contact form. In order to match you with potential donees, we would need some critical information such as your contact details and blood group. Please be as accurate as possible with your answers, we would hate to waste your time by matching you with the wrong patients.</p>
-            <hr />
-            <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 2: Verify</div>
-            <p
-              class="text-gray-800 text-base px-6 mb-5"
-            >PlasmaLine will reach out to you to verify your COVID-19 test results and identity</p>
-            <hr />
-            <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 3: Matching</div>
-            <p
-              class="text-gray-800 text-base px-6 mb-5"
-            >PlasmaLine would use details provided by you to match you with potential recipients.</p>
-            <hr />
-            <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 4: Consent</div>
-            <p
-              class="text-gray-800 text-base px-6 mb-5"
-            >Register with us by filling out a simple contact form. In order to match you with potential donees, we would need some critical information such as your contact details and blood group. Please be as accurate as possible with your answers, we would hate to waste your time by matching you with the wrong patients.</p>
-            <hr />
-            <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 5: Save a life</div>
-            <p
-              class="text-gray-800 text-base px-6 mb-5"
-            >The patient gets in touch with you and you heroically save a life.</p>
-			<div class="flex items-center justify-end">
-              <router-link to="/donor-page">
-                <button
-                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
-                  style="background:#85e1ff; margin-right:50px"
-                >Register as donor</button>
-              </router-link>
+        <section class="bg-white border-b py-8">
+          <div class="container max-w-5xl mx-auto m-8">
+            <h1
+              class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+            >
+              Our mission
+            </h1>
+            <div class="w-full mb-4">
+              <div
+                class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+              ></div>
+            </div>
+
+            <div class="flex flex-wrap">
+              <div class="w-5/6 sm:w-1/2 p-6">
+                <!-- <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem ipsum dolor sit amet</h3> -->
+                <p class="text-gray-600 mb-16" style="font-size:20px;">
+                  We know how terrifying it is to run from pillar to post to
+                  find the right blood donor, in the absence of an obvious place
+                  or institution to reach out to. PlasmaLine has been created to
+                  make sure this crucial time isn’t wasted in looking in the
+                  wrong place.
+                  <br />
+                  <br />
+                </p>
+                <!-- Images from: <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a></p> -->
+              </div>
+              <div class="w-full sm:w-1/2 p-6">
+                <img
+                  class="w-full md:w-4/5 z-50"
+                  style="padding-left:100px; height:300px; width:auto;"
+                  src="../assets/doctor-img.png"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+              <div class="w-full sm:w-1/2 p-6 mt-6">
+                <img
+                  class="w-full md:w-4/5 z-50"
+                  style="padding-left:150px; height:300px; width:auto;"
+                  src="../assets/doctor-img.png"
+                />
+              </div>
+              <div class="w-full sm:w-1/2 p-6 mt-6">
+                <div class="align-middle">
+                  <!-- <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem ipsum dolor sit amet</h3> -->
+                  <p class="text-gray-600 mb-8" style="font-size:20px;">
+                    Our aim is to match COVID recovered individuals with
+                    patients who are in need of plasma therapy. PlasmaLine is a
+                    small step towards solving the problem of finding eligible
+                    donors in a situation where time is of great essence.
+                    <br />
+                    <br />
+                  </p>
+                  <!-- Images from: <a class="text-orange-500 underline" href="https://undraw.co/">undraw.co</a></p> -->
+                </div>
+              </div>
             </div>
           </div>
-			
-        </div>
-		
+        </section>
 
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <!-- <p class="w-full text-gray-600 text-xs md:text-sm px-6">xGETTING STARTED</p> -->
-              <div class="w-full font-bold text-3xl text-gray-800 py-6">For Patients</div>
-              <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 1: Register</div>
-              <p
-                class="text-gray-800 text-base px-6 mb-5"
-              >Register with us by filling out a simple contact form with essential patient details. We ask only for details that are necessary to match you with closest eligible plasma donors. To provide unnecessary delays, please ensure that details provided by you are as accurate as possible.</p>
-              <hr />
-              <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 2: Verify</div>
-              <p
-                class="text-gray-800 text-base px-6 mb-5"
-              >Representatives of PlasmaLine will contact you within 24 hours to verify your needs and understand your situation better.</p>
-              <hr />
-              <div class="w-full font-bold text-2xl text-left text-gray-800 px-6">Step 3: Matching</div>
-              <p
-                class="text-gray-800 text-base px-6 mb-5"
-              >Once we understand your needs better, we will provide you with a list of volunteer plasma donors closest to you.</p>
-			<hr />
-			<div
-                class="w-full font-bold text-2xl text-left text-gray-800 px-6"
-              >Step 4: Saving a life</div>
-              <p
-                class="text-gray-800 text-base px-6 mb-5"
-              >You get in touch with the eligible donors and get yourself (or your loved ones) life-saving plasma</p>
-	<div class="flex items-center justify-end">
-              <router-link to="/patient-page">
-                <button
-                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
-                  style="background:#85e1ff;margin-right:50px"
-                >Register as Patient</button>
-              </router-link>
+        <section class="bg-white border-b py-8">
+          <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <h1
+              class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+            >
+              How it works?
+            </h1>
+            <div class="w-full mb-4"></div>
+
+            <div
+              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+            >
+              <div
+                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+              >
+                <!-- <p class="w-full text-gray-600 text-xs md:text-sm px-6">xGETTING STARTED</p> -->
+                <div class="w-full font-bold text-3xl text-gray-800 py-6">
+                  For Donors
+                </div>
+                <div
+                  class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                >
+                  Step 1: Register
+                </div>
+                <p class="text-gray-800 text-base px-6 mb-5">
+                  Register with us by filling out a simple contact form. In
+                  order to match you with potential donees, we would need some
+                  critical information such as your contact details and blood
+                  group. Please be as accurate as possible with your answers, we
+                  would hate to waste your time by matching you with the wrong
+                  patients.
+                </p>
+                <hr />
+                <div
+                  class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                >
+                  Step 2: Verify
+                </div>
+                <p class="text-gray-800 text-base px-6 mb-5">
+                  PlasmaLine will reach out to you to verify your COVID-19 test
+                  results and identity
+                </p>
+                <hr />
+                <div
+                  class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                >
+                  Step 3: Matching
+                </div>
+                <p class="text-gray-800 text-base px-6 mb-5">
+                  PlasmaLine would use details provided by you to match you with
+                  potential recipients.
+                </p>
+                <hr />
+                <div
+                  class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                >
+                  Step 4: Consent
+                </div>
+                <p class="text-gray-800 text-base px-6 mb-5">
+                  Register with us by filling out a simple contact form. In
+                  order to match you with potential donees, we would need some
+                  critical information such as your contact details and blood
+                  group. Please be as accurate as possible with your answers, we
+                  would hate to waste your time by matching you with the wrong
+                  patients.
+                </p>
+                <hr />
+                <div
+                  class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                >
+                  Step 5: Save a life
+                </div>
+                <p class="text-gray-800 text-base px-6 mb-5">
+                  The patient gets in touch with you and you heroically save a
+                  life.
+                </p>
+                <div class="flex items-center justify-end">
+                  <router-link to="/DonorRegistration">
+                    <button
+                      class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+                      style="background:#85e1ff; margin-right:50px"
+                    >
+                      Register as donor
+                    </button>
+                  </router-link>
+                </div>
+              </div>
             </div>
+
+            <div
+              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+            >
+              <div
+                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+              >
+                <div
+                  class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+                >
+                  <!-- <p class="w-full text-gray-600 text-xs md:text-sm px-6">xGETTING STARTED</p> -->
+                  <div class="w-full font-bold text-3xl text-gray-800 py-6">
+                    For Patients
+                  </div>
+                  <div
+                    class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                  >
+                    Step 1: Register
+                  </div>
+                  <p class="text-gray-800 text-base px-6 mb-5">
+                    Register with us by filling out a simple contact form with
+                    essential patient details. We ask only for details that are
+                    necessary to match you with closest eligible plasma donors.
+                    To provide unnecessary delays, please ensure that details
+                    provided by you are as accurate as possible.
+                  </p>
+                  <hr />
+                  <div
+                    class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                  >
+                    Step 2: Verify
+                  </div>
+                  <p class="text-gray-800 text-base px-6 mb-5">
+                    Representatives of PlasmaLine will contact you within 24
+                    hours to verify your needs and understand your situation
+                    better.
+                  </p>
+                  <hr />
+                  <div
+                    class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                  >
+                    Step 3: Matching
+                  </div>
+                  <p class="text-gray-800 text-base px-6 mb-5">
+                    Once we understand your needs better, we will provide you
+                    with a list of volunteer plasma donors closest to you.
+                  </p>
+                  <hr />
+                  <div
+                    class="w-full font-bold text-2xl text-left text-gray-800 px-6"
+                  >
+                    Step 4: Saving a life
+                  </div>
+                  <p class="text-gray-800 text-base px-6 mb-5">
+                    You get in touch with the eligible donors and get yourself
+                    (or your loved ones) life-saving plasma
+                  </p>
+                  <div class="flex items-center justify-end">
+                    <router-link to="/PatientRegistration">
+                      <button
+                        class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+                        style="background:#85e1ff;margin-right:50px"
+                      >
+                        Register as Patient
+                      </button>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
-           
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- <section class="bg-gray-100 py-8">
+        <!-- <section class="bg-gray-100 py-8">
 
 
 	
@@ -286,58 +380,68 @@
 		
     </section>-->
 
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg
-      class="wave-top"
-      viewBox="0 0 1439 147"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#f8fafc">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            />
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g
-              transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
-            >
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"
-              />
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              />
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                opacity="0.200000003"
-              />
+        <!-- Change the colour #f8fafc to match the previous section colour -->
+        <svg
+          class="wave-top"
+          viewBox="0 0 1439 147"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+              <g class="wave" fill="#f8fafc">
+                <path
+                  d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                />
+              </g>
+              <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+                <g
+                  transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
+                >
+                  <path
+                    d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                    opacity="0.100000001"
+                  />
+                  <path
+                    d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                    opacity="0.100000001"
+                  />
+                  <path
+                    d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                    opacity="0.200000003"
+                  />
+                </g>
+              </g>
             </g>
           </g>
-        </g>
-      </g>
-    </svg>
+        </svg>
 
-    <section class="container mx-auto text-center py-6 mb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Call to Action</h1>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
+        <section class="container mx-auto text-center py-6 mb-12">
+          <h1
+            class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+          >
+            Call to Action
+          </h1>
+          <div class="w-full mb-4">
+            <div
+              class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
+            ></div>
+          </div>
 
-      <h3 class="my-4 text-3xl leading-tight">Main Hero Message to sell yourself!</h3>
+          <h3 class="my-4 text-3xl leading-tight">
+            Main Hero Message to sell yourself!
+          </h3>
 
-      <button
-        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
-      >Action!</button>
-    </section>
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+          >
+            Action!
+          </button>
+        </section>
 
-    <!--Footer-->
-    <!-- <footer class="bg-white">
+        <!--Footer-->
+        <!-- <footer class="bg-white">
 	<div class="container mx-auto  px-8">
 
         <div class="w-full flex flex-col md:flex-row py-6">
@@ -413,19 +517,21 @@
 
     </footer>-->
 
-    <!-- jQuery if you need it
+        <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     -->
-  </body>
-</div>
-
+      </body>
+    </div>
   </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
-}
+  name: "PageIndex",
+  methods: {
+   
+  }
+};
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
@@ -437,13 +543,6 @@ export default {
 body {
   background: lightblue;
 }
-.box {
-  width: 300px;
-  height: 300px;
-  background: green;
-  margin: 0 auto;
-  font-size: 200px;
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -451,9 +550,6 @@ html {
 }
 body {
   margin: 0;
-}
-main {
-  display: block;
 }
 h1 {
   font-size: 2em;
@@ -464,147 +560,39 @@ hr {
   height: 0;
   overflow: visible;
 }
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-a {
-  background-color: transparent;
-}
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-b,
-strong {
-  font-weight: bolder;
-}
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
 img {
   border-style: none;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+button {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
-button,
-input {
+button {
   overflow: visible;
 }
-button,
-select {
+button {
   text-transform: none;
 }
-[type="button"],
-[type="reset"],
-[type="submit"],
 button {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-progress {
-  vertical-align: baseline;
-}
-textarea {
-  overflow: auto;
-}
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
-details {
-  display: block;
-}
-summary {
-  display: list-item;
-}
-template {
-  display: none;
-}
-[hidden] {
-  display: none;
-}
-blockquote,
-dd,
-dl,
-figure,
 h1,
-h2,
 h3,
-h4,
-h5,
-h6,
 hr,
-p,
-pre {
+p {
   margin: 0;
 }
 button {
@@ -615,16 +603,6 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
-}
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -646,69 +624,24 @@ hr {
 img {
   border-style: solid;
 }
-textarea {
-  resize: vertical;
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #a0aec0;
-}
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  color: #a0aec0;
-}
-input::placeholder,
-textarea::placeholder {
-  color: #a0aec0;
-}
-[role="button"],
 button {
   cursor: pointer;
 }
-table {
-  border-collapse: collapse;
-}
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-size: inherit;
   font-weight: inherit;
 }
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
+button {
   padding: 0;
   line-height: inherit;
   color: inherit;
 }
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
-}
-audio,
-canvas,
-embed,
-iframe,
 img,
-object,
-svg,
-video {
+svg {
   display: block;
 }
-img,
-video {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -998,7 +931,5 @@ video {
   .lg\:-mt-24 {
     margin-top: -6rem;
   }
-  
- 
 }
 </style>
